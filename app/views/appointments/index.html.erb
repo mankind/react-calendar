@@ -1,0 +1,27 @@
+<h1> React cal </h1>
+<h2> Appointments </h2>
+<h3> 	Make a new appointment </h3>
+<!-- we will convert everything here to 4 react components  -->
+<!-- a parent component to wrap formand responses   -->
+<!-- form become a react component named  -->
+<!-- this partial become a react component named  -->
+<!-- each individual appointment also become a react component named  -->
+
+<!-- form become a react component named  -->
+<%# form_with(model: @appointment, id: 'new-appointment-form') do |f| %>
+ <%# f.text_field :title %>
+ <%# f.text_field :appt_time %>
+ <%# f.submit "Make appointment" %>
+<%# end %>
+
+<!-- this partial become a react component named  -->
+<!-- each individual appointment also become a react component named  -->
+<div id="appointments">
+<%# render 'appointments' %>
+</div>
+
+<%= react_component('Appointments', appointments: @appointments) %>
+
+<%# react_component("Home") %>
+
+
